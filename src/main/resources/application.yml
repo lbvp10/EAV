@@ -1,0 +1,17 @@
+server:
+  port: 5623
+spring:
+  profiles:
+    active: development
+---
+
+spring:
+  profiles: development
+  datasource:
+    url: jdbc:mysql://localhost:3306/db_example
+    username: root
+    password: root
+  jpa:
+    generate-ddl: true
+    hibernate:
+      ddl-auto: update
